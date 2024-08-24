@@ -4,7 +4,7 @@ echo
 echo
 git status
 git add .
-git commit -m "Meu priemiro web-site"
+git commit -m "Meu primeiro web site de restaurante"
 git push
 echo
 echo
