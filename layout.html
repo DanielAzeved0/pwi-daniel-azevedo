@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguinçudos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Isso serve para mudar style do header */
+        header {
+            background-color: brown;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: orange;
+        }
+
+        /*Cria duas colunas/caixas que flutuam uma ao lado da outra*/
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(245, 245, 73);
+            padding: 90px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(221, 95, 21);
+            height: 300px;
+        }
+
+        /* Limpa os floats após as colunas */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilize o rodapé */
+        footer {
+            background-color: brown;
+            padding: 10px;
+            text-align: center;
+            color: orange;
+        }
+
+        /* Layout responsivo - faz com que as duas colunas/caixas sejam empilhadas uma em cima da outra em vez de uma ao lado da outra, em telas pequenas */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Introdução ao mundo da Linguiça!</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Linguiça</a></li>
+                <li><a href="#">Salsicha</a></li>
+                <li><a href="#">Bacon</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Cardapio do Restaurante que vedemos Coxinhas no pais</h1>
+            <p>Aqui nos vendemos linguinça, salsicha e balcons, mas n da forma tradicional,vendemos tudo isso dentro de
+                coxinhas.</p>
+            <p>Vemos coxinhas com gosto das nossa poderosas salsicha, bebidas tematicas sobre os nosso gostosos e
+                tradicionais pratos e doces para que toa a criança se apegue e se debulhe em diabetes.</p>
+            <img src="imagem/01-4-1.jpg" alt="Imagem da nossa lojas" style="width: 50%"></img>
+        </article>
+    </section>
+
+    <footer>
+        <p>Criado por Daniel Azevedo</p>
+    </footer>
+</body>
+
+</html>
