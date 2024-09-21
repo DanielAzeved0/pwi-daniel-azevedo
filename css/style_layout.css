@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ body {
 
 /* Isso serve para mudar style do header */
 header {
-    background-color: brown;
+    background-color: rgb(161, 66, 11);
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -17,25 +17,27 @@ header {
 
 /*Cria duas colunas/caixas que flutuam uma ao lado da outra*/
 nav {
-    float: left;
-    width: 30%;
-    height: 300px;
-    background-color: rgb(245, 245, 73);
-    padding: 90px;
+    float: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10%;
 }
 
 nav ul {
+    text-align: center;
     list-style-type: none;
     padding: 0;
 }
 
 article {
 
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: rgb(221, 95, 21);
-    height: 300px;
+    float: center;
+    padding: 10%;
+    width: 100%;
+    background-color: rgb(100, 59, 39);
+    height: 100%;
+    text-align: center;
 }
 
 /* Limpa os floats após as colunas */
@@ -47,10 +49,11 @@ section::after {
 
 /* Estilize o rodapé */
 footer {
-    background-color: brown;
+    background-color: rgb(161, 66, 11);
     padding: 10px;
     text-align: center;
     color: orange;
+    text-align: left;
 }
 
 /* Layout responsivo - faz com que as duas colunas/caixas sejam empilhadas uma em cima da outra em vez de uma ao lado da outra, em telas pequenas */
@@ -64,5 +67,5 @@ footer {
 }
 
 .Estilodaimagem {
-    width: 20%
+    width: 50%;height: 50%;
 }
