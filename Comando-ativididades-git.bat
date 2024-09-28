@@ -4,7 +4,7 @@ echo
 echo
 git status
 git add .
-git commit -m "Mudei o CSS do meu layout para um arquivo somente para CSS."
+git commit -m "HTML junto com JavaScript."
 git push
 echo
 echo
