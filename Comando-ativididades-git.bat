@@ -4,7 +4,7 @@ echo
 echo
 git status
 git add .
-git commit -m "HTML junto com JavaScript."
+git commit -m "Arquivos de php"
 git push
 echo
 echo
